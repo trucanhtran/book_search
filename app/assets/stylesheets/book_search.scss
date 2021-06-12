@@ -1,0 +1,33 @@
+// Place all the styles related to the Book_search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#id_header {
+  width: 100%;
+  background-color: #3edbf0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+}
+#id_nav {
+  padding: 13px 48px;
+}
+#id_nav input {
+  border-radius: 10px;
+  line-height: 18px;
+  border: 1px solid #333;
+  float: right;
+  padding-left: 4px;
+}
+#id_aside {
+  margin-top: 46px;
+  color: #fff;
+  background-color: #04009a;
+  display: inline-block;
+  padding: 0px 42px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #fff;
+}
