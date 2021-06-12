@@ -1,11 +1,22 @@
 <div id="id_header">
   <div id="id_nav">
-    <input type="text" placeholder="Enter Keyword" name="keyword">
+    <div class="search">
+      <input type="text" placeholder="Enter Keyword" name="keyword" id="id_search">
+      <div id="id_products_list"></div>
+    </div>
   </div>
 </div>
-<div id="id_aside">
-  <div id="id_category">
-    <h3>Category</h3>
+<div id="id_body">
+  <div id="id_aside">
+    <div id="id_categories">
+      <h3>Category</h3>
+      <% @categories.each do |category| %>
+        <a href="#">
+          <%= category.name %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+  <div id="id_content">
   </div>
 </div>
-<div id="id_content"></div>
