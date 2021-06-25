@@ -2,57 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-/*Header*/
-#id_header {
-  width: 100%;
-  background-color: #3edbf0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 46px;
-  box-sizing: border-box;
-}
-#id_nav {
-  padding: 13px 48px;
-}
+/*book search*/
 
-#id_nav .search {
-  position: relative;
-  display: inline-block;
-  float: right;
-}
-
-#id_nav input {
-  border-radius: 10px;
-  line-height: 18px;
-  border: 1px solid #333;
-  padding-left: 4px;
-}
-#id_products_list {
-  position: absolute;
-  background-color: #fff;
-  display: inline-block;
-  top: 20px;
-  left: 0;
-}
-#id_body {
+.container {
   display: flex;
+  font-family: sans-serif;
+  align-items: center;
 }
-/*Aside*/
-#id_aside {
-  margin-top: 46px;
-  color: #fff;
-  background-color: #04009a;
-  display: inline-block;
-  padding: 0px 42px;
+
+/*Category*/
+#id_categories {
+  flex-grow: 1;
+  color: #8d8484;
+  text-align: center;
+}
+
+#id_categories h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+#id_list_categories {
+  text-transform: uppercase;
+  text-align: left;
+  /* display: flex; */
+  /* align-items: center; */
   position: absolute;
-  left: 0;
-  top: 0;
-  border: 1px solid #fff;
+  /* top: 82px; */
+  left: 14%;
+}
+
+#id_list_categories a {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 1.4;
+  color: black;
+}
+/*Search*/
+#id_search_bar {
+  flex-grow: 2;
   box-sizing: border-box;
 }
-/*Content*/
-#id_content {
-  float: right;
+#id_search {
+  border-radius: 10px;
+  line-height: 1.5;
+  width: 50%;
+  border: 1px solid;
+}
+
+#id_search_content {
 }
