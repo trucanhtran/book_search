@@ -1,16 +1,29 @@
-<div id="id_categories">
-  <h3>Category</h3>
-  <div id="id_list_categories">
-    <% @categories.each do |category| %>
-      <a href="#">
-        <%= category.name %>
-      </a>
-      <br/>
-    <% end %>
+<div class="left-content">
+  <div id="id_categories">
+    <h3>Category</h3>
+    <div id="id_list_categories">
+      <% @categories.each do |category| %>
+        <a href="#">
+          <%= category.name %>
+        </a>
+        <br/>
+      <% end %>
+    </div>
   </div>
 </div>
-
-<div id="id_search_bar">
-  <input type="text" placeholder="Enter Keyword" name="keyword" id="id_search">
-  <div id="id_search_content"></div>
+<div class="right-content">
+  <div id="id_search_bar">
+    <input type="text" placeholder="Enter Keyword" name="keyword" id="id_search">
+    <div id="id_search_content"></div>
+  </div>
+  <div id="id_products_list">
+    <% @products.each do |product| %>
+      <div class="product">
+        <img src="<%= product.image %>"/>
+        <div class="product-title">
+           <%= product.title %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

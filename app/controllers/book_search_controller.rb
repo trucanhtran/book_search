@@ -1,6 +1,7 @@
 class BookSearchController < ApplicationController
   def index
     @categories = Category.all
+    @products = Product.all.limit(12)
   end
 
   def search
