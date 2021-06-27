@@ -8,4 +8,8 @@ class BookSearchController < ApplicationController
     @products = Product.where("title LIKE ?", "%#{params[:keyword]}%")
     render json: @products
   end
+
+  def show
+    @category = Category.find_by(id: params[:id])
+  end
 end
