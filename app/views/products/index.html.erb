@@ -1,9 +1,12 @@
-<%= @category.name %>
-<% @products.each do |product| %>
-<div>
-  <%= image_tag product.image %>
+<div id="id_products_list">
+  <% @products.each do |product| %>
+  <div class="product">
+    <div>
+      <%= image_tag product.image %>
+    </div>
+    <div class="product-title">
+      <%= product.title %>
+    </div>
+  </div>
+  <% end %>
 </div>
-<div>
-  <%= product.title %>
-</div>
-<% end %>

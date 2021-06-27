@@ -14,3 +14,17 @@
  *= require_self
  */
 @import "book_search";
+@import "product";
+
+#id_products_list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+#id_products_list .product {
+  text-align: center;
+  width: 30%;
+}
+
+#id_products_list .product-title {
+}
