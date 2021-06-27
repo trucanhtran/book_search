@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+@import "book_search";
+@import "product";
+
+.container {
+  display: flex;
+  font-family: sans-serif;
+}
+
+.left-content {
+  flex-grow: 1;
+}
+
+.right-content {
+  flex-grow: 2;
+  margin-left: 48px;
+}
+
+#id_products_list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+#id_products_list .product {
+  text-align: center;
+  width: 30%;
+}
+
+#id_products_list .product-title {
+}
