@@ -3,7 +3,7 @@
     <h3>Category</h3>
     <div id="id_list_categories">
       <% @categories.each do |category| %>
-          <%=link_to category.name, category_products_path(category.id) %>
+          <%=link_to category.name, category_products_path(category.id), remote: true %>
         <br/>
       <% end %>
     </div>
@@ -15,13 +15,6 @@
     <div id="id_search_content"></div>
   </div>
   <div id="id_products_list">
-    <% @products.each do |product| %>
-      <div class="product">
-        <img src="<%= product.image %>"/>
-        <div class="product-title">
-           <%= product.title %>
-        </div>
-      </div>
-    <% end %>
+    <%= render partial: 'index', locals: { products: @products} %>
   </div>
 </div>
