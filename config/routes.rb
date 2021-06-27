@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   root to: 'book_search#index'
   post'search', to: 'book_search#search'
   get 'product', to: 'book_search#show'
