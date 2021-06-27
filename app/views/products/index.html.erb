@@ -1,0 +1,9 @@
+<%= @category.name %>
+<% @products.each do |product| %>
+<div>
+  <%= image_tag product.image %>
+</div>
+<div>
+  <%= product.title %>
+</div>
+<% end %>
