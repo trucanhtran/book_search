@@ -1,8 +1,8 @@
 <% products.each do |product| %>
   <div class="product">
-    <img src="<%= product.image %>"/>
+    <img class="product-image" src="<%= product.image %>"/>
     <div class="product-title">
-      <%= product.title %>
+      <%=link_to product.title, category_product_path(product.category.id, product.id) %>
     </div>
   </div>
 <% end %>
