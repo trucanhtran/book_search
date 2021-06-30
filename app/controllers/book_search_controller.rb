@@ -5,7 +5,9 @@ class BookSearchController < ApplicationController
   end
 
   def search
-    @products = Product.where("title LIKE ?", "%#{params[:keyword]}%")
-    render json: @products
+    @products = Product.where("lower(title) LIKE ?", "%#{params[:keyword]}%")
+    respond_to do |format|
+      format.js
+    end
   end
 end

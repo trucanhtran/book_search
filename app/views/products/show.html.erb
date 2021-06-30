@@ -1,0 +1,37 @@
+<div>
+  <%= image_tag @product.image  %>
+</div>
+<table>
+  <tr>
+    <td>Name:</td>
+    <td>
+      <div>
+        <%= @product.title  %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Sub Name:</td>
+    <td>
+      <div>
+        <%= @product.sub_title  %>
+      </div>
+    </td>
+  </tr>
+   <tr>
+    <td>Price:</td>
+    <td>
+      <div>
+        <%= @product.price %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>URL:</td>
+    <td>
+      <a href="<%= @product.url%>", target="blank">
+        <%= @product.url  %>
+      </a>
+    </td>
+  </tr>
+</table>
