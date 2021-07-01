@@ -1,34 +1,34 @@
+<div class="btn btn-back">
+  <%= link_to "Back", root_path %>
+</div>
 <div>
   <%= image_tag @product.image  %>
 </div>
 <table>
   <tr>
-    <td>Name:</td>
-    <td>
+    <td class="col-type">Name:</td>
+    <td class="col-product first-row">
       <div>
         <%= @product.title  %>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td>Sub Name:</td>
-    <td>
-      <div>
-        <%= @product.sub_title  %>
+        ,
+        <span>
+          <%= @product.sub_title  %>
+        </span>
       </div>
     </td>
   </tr>
    <tr>
-    <td>Price:</td>
-    <td>
+    <td class="col-type">Price:</td>
+    <td class="col-product">
       <div>
+        <span>$</span>
         <%= @product.price %>
       </div>
     </td>
   </tr>
   <tr>
-    <td>URL:</td>
-    <td>
+    <td class="col-type">URL:</td>
+    <td class="col-product">
       <a href="<%= @product.url%>", target="blank">
         <%= @product.url  %>
       </a>
