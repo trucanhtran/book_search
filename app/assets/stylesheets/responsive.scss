@@ -1,0 +1,12 @@
+@media (max-width: 740px) {
+  .col {
+    width: 100%;
+  }
+  .mobile-display {
+    display: flex;
+    flex-direction: column;
+  }
+  table {
+    margin: 0px;
+  }
+}

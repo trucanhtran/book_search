@@ -1,37 +1,41 @@
-<div class="btn btn-back">
-  <%= link_to "Back", root_path %>
+<div class="mobile-display">
+  <div>
+    <div class="btn btn-back">
+      <%= link_to "Back", root_path %>
+    </div>
+    <div>
+      <%= image_tag @product.image  %>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <td class="col-type">Name:</td>
+      <td class="col-product first-row">
+        <div>
+          <%= @product.title  %>
+          ,
+          <span>
+            <%= @product.sub_title  %>
+          </span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="col-type">Price:</td>
+      <td class="col-product">
+        <div>
+          <span>$</span>
+          <%= @product.price %>
+        </div>
+      </td>
+    </tr>
+    <tr>r
+      <td class="col-type">URL:</td>
+      <td class="col-product">
+        <a href="<%= @product.url%>", target="blank">
+          <%= @product.url  %>
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
-<div>
-  <%= image_tag @product.image  %>
-</div>
-<table>
-  <tr>
-    <td class="col-type">Name:</td>
-    <td class="col-product first-row">
-      <div>
-        <%= @product.title  %>
-        ,
-        <span>
-          <%= @product.sub_title  %>
-        </span>
-      </div>
-    </td>
-  </tr>
-   <tr>
-    <td class="col-type">Price:</td>
-    <td class="col-product">
-      <div>
-        <span>$</span>
-        <%= @product.price %>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="col-type">URL:</td>
-    <td class="col-product">
-      <a href="<%= @product.url%>", target="blank">
-        <%= @product.url  %>
-      </a>
-    </td>
-  </tr>
-</table>

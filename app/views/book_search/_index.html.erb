@@ -1,5 +1,5 @@
 <% products.each do |product| %>
-  <div class="product">
+  <div class="product col">
     <img class="product-image" src="<%= product.image %>"/>
     <div class="product-title">
       <%=link_to product.title, category_product_path(product.category.id, product.id) %>
