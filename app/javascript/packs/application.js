@@ -12,7 +12,7 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-
+require("jquery");
 
 function appendText(data){
   document.getElementById("id_search_content").innerHTML = "";
